@@ -1,9 +1,9 @@
 # Transactional Digital Ledger
 
-> **Development status:** the repository currently contains the first implementation phase:
-> project configuration, domain models, PostgreSQL schema and constraints, migrations, Docker
-> setup, and a database-backed health endpoint. Transfer execution, reconciliation endpoints,
-> tests, demos, and benchmark tooling will be added in subsequent phases.
+> **Development status:** the repository currently contains the ledger foundation and core API:
+> account creation, atomic idempotent transfers, deterministic row locking, reconciliation, and
+> focused PostgreSQL integration tests. The concurrency demo, invariant stress harness, and HTTP
+> saturation tooling will be added in the final phase.
 
 A compact FastAPI and PostgreSQL backend focused on one difficult problem: moving money correctly
 under failures, retries, and concurrent requests.
