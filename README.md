@@ -1,9 +1,8 @@
 # Transactional Digital Ledger
 
-> **Development status:** the repository currently contains the ledger foundation and core API:
-> account creation, atomic idempotent transfers, deterministic row locking, reconciliation, and
-> focused PostgreSQL integration tests. The concurrency demo, invariant stress harness, and HTTP
-> saturation tooling will be added in the final phase.
+> **Status:** complete. The repository includes the ledger API, PostgreSQL invariants, focused
+> integration tests, concurrency demo, invariant stress test, and repeatable HTTP saturation
+> benchmark.
 
 A compact FastAPI and PostgreSQL backend focused on one difficult problem: moving money correctly
 under failures, retries, and concurrent requests.
